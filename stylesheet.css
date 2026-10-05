@@ -58,7 +58,8 @@ note {
 }
 
 #selected table tr,
-#all table tr {
+#all table tr,
+#course-project tr {
   display: grid;
   grid-template-columns: 285px 1fr;
   align-items: start;
@@ -70,30 +71,35 @@ note {
 }
 
 #selected table tr:hover,
-#all table tr:hover {
+#all table tr:hover,
+#course-project tr:hover {
   transform: translateY(-2px);
   border-color: #d0d0d0;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 #selected table td,
-#all table td {
+#all table td,
+#course-project td {
   display: block;
 }
 
 #selected table td:first-child,
-#all table td:first-child {
+#all table td:first-child,
+#course-project td:first-child {
   width: auto !important;
 }
 
 #selected table td:last-child,
-#all table td:last-child {
+#all table td:last-child,
+#course-project td:last-child {
   width: auto !important;
 }
 
 #selected img,
 #all img,
-#all video {
+#all video,
+#course-project img {
   display: block;
   width: 100% !important;
   max-width: 100% !important;
@@ -104,27 +110,33 @@ note {
 #selected table tr:hover img,
 #selected table tr:hover video,
 #all table tr:hover img,
-#all table tr:hover video {
+#all table tr:hover video,
+#course-project tr:hover img {
   transform: translateY(-2px);
 }
 
 #selected,
 #all,
+#course-project,
 #selected p,
 #all p,
+#course-project p,
 #selected td,
-#all td {
+#all td,
+#course-project td {
   text-align: left;
 }
 
 @media (max-width: 760px) {
   #selected table tr,
-  #all table tr {
+  #all table tr,
+  #course-project tr {
     grid-template-columns: 1fr;
   }
 
   #selected table td,
-  #all table td {
+  #all table td,
+  #course-project td {
     width: 100% !important;
   }
 }
